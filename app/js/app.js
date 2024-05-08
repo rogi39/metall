@@ -100,6 +100,9 @@ const createExpertSlider = () => {
 		spaceBetween: 30,
 		watchSlidesVisibility: true,
 		loop: true,
+		autoplay: {
+			delay: 2500,
+		},
 		// speed: 500,
 		navigation: {
 			nextEl: '.first-slider-next',

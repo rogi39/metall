@@ -773,6 +773,15 @@ img
 		border: 1px solid $text
 		transition: background-color .35s ease-out, border-color .35s ease-out
 		border-radius: 5px
+		&.swiper-button-lock
+			display: none
+		&.swiper-button-disabled
+			opacity: 0.5
+			&:hover
+				border-color: #222528
+				background-color: transparent
+				.slider-btn__svg
+					fill: #222528
 		&:hover
 			background-color: $accent
 			border-color: $accent
