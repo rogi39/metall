@@ -297,7 +297,7 @@ img
 	margin: 0 -15px
 
 .header
-	background-color: $text
+	background-color: #0049C1
 	// padding: 20px 0 20px 32px
 	padding: 20px 0
 	+media-breakpoint-up(xl)
@@ -492,9 +492,10 @@ img
 		margin-bottom: 20px
 		&:hover
 			.menu__item-svg
-				fill: $accent
+				fill: #919191
 			.menu__link
-				color: $accent
+				color: #919191
+
 		+media-breakpoint-up(xl)
 			margin-bottom: 0
 			&:not(:last-child)
@@ -655,24 +656,36 @@ img
 .first
 	/* .first__title */
 	&__title
-		font-weight: 7z	00
+		font-weight: 700
 		font-size: 20px
 		line-height: 130%
 		text-transform: uppercase
 		font-family: Montserrat, sans-serif
-		margin-bottom: 16px
+		margin-bottom: 20px
 		text-align: center
-		color: $accent
+		color: #0049C1
 		+media-breakpoint-up(sm)
 			font-size: 24px
 		+media-breakpoint-up(md)
-			font-size: 32px
+			font-size: 28px
 		+media-breakpoint-up(lg)
 			font-size: 38px
 		+media-breakpoint-up(xl)
 			font-size: 48px
 		+media-breakpoint-up(wxp)
 			font-size: 58px
+		&_hero-title
+			font-size: 20px
+			+media-breakpoint-up(sm)
+				font-size: 28px
+			+media-breakpoint-up(md)
+				font-size: 38px
+			+media-breakpoint-up(lg)
+				font-size: 48px
+			+media-breakpoint-up(xl)
+				font-size: 58px
+			+media-breakpoint-up(wxp)
+				font-size: 62px
 	/* .first__text */
 	&__text
 		font-weight: 500
@@ -715,6 +728,7 @@ img
 
 	/* .first__slider-img */
 	&__slider-img
+		width: 100%
 
 .product-thumb-slider-block
 	position: relative
@@ -933,13 +947,15 @@ img
 	/* .product-item__title */
 	&__title
 		font-weight: 700
-		font-size: 20px
+		font-size: 16px
 		line-height: 140%
 		text-align: left
 		color: $text
 		min-height: 56px
 		max-height: 56px
 		overflow: hidden
+		+media-breakpoint-up(sm)
+			font-size: 20px
 	/* .product-item__img */
 	&__img
 		max-height: 180px
@@ -972,11 +988,11 @@ img
 			font-size: 24px
 			min-height: 28.5px
 
-.product-slider
-	&__slide
-		max-width: 280px
-		+media-breakpoint-up(sm)
-			max-width: 320px
+/* .product-slider
+ &__slide
+ max-width: 280px
+ +media-breakpoint-up(sm)
+ max-width: 320px */
 
 .about
 	/* .about__row */
@@ -1182,7 +1198,9 @@ img
 		height: 100%
 		width: 100%
 		min-height: 312px
-		max-height: 648px
+		max-height: 448px
+		+media-breakpoint-up(wxpp)
+			max-height: 548px
 	/* .project-item__text */
 	&__text
 		font-weight: 500

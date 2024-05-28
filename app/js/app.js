@@ -144,7 +144,7 @@ createProductSingleSlider();
 const createProductSlider = () => {
 	let slider = new Swiper(".product-slider", {
 		// slidesPerView: 3,
-		slidesPerView: 'auto',
+		slidesPerView: 4,
 		// rewind: true,
 		spaceBetween: 24,
 		navigation: {
@@ -171,20 +171,24 @@ if (sliderProduct) {
 	for (let i = 0; i < sliderProduct.length; i++) {
 		var slider = sliderProduct[i];
 		new Swiper(sliderProduct[i], {
-			// slidesPerView: 3,
-			slidesPerView: 'auto',
 			// rewind: true,
 			spaceBetween: 24,
 			navigation: {
 				nextEl: slider.closest('.section').querySelector('.product-slider-next'),
 				prevEl: slider.closest('.section').querySelector('.product-slider-prev'),
 			},
-			// slidesPerView: 1,
-			// breakpoints: {
-			// 	'576': {
-			// 		slidesPerView: 'auto'
-			// 	}
-			// },
+			slidesPerView: 1,
+			breakpoints: {
+				'576': {
+					slidesPerView: 2
+				},
+				'768': {
+					slidesPerView: 3
+				},
+				'992': {
+					slidesPerView: 4
+				}
+			},
 		});
 
 		// slider = tns({
